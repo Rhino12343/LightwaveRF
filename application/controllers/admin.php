@@ -19,13 +19,24 @@ class Admin extends CI_Controller {
 		$this->load->view('admin_login', $data);
 	}
 
-	public function login() {}
+	public function login() {
+		$this->form_validation->set_rules('usn', 'Username', 'required');
+		$this->form_validation->set_rules('pwd', 'Password', 'required');
+
+		if ($this->form_validation->run()) {
+			echo json_encode(array('success' => true));
+		} else {
+			echo json_encode(array('success' =>false, 'errors' => validation_errors()));
+		}
+	}
 
 	public function logout() {}
 
 	public function import_users() {}
 
-	public function list_users() {}
+	public function list_users() {
+		echo "this is the new content";
+	}
 
 	public function update_user() {}
 }
