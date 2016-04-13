@@ -8,7 +8,16 @@ class Admin extends CI_Controller {
 		parent::__construct();
 	}
 
-	public function index() {}
+	public function index() {
+		$data = array(
+			'title' => 'Admin Login Area',
+			'meta_description' => 'Admin Login, to access importing data',
+			'scripts' => array('assets/js/jquery-2.2.3.min.js', 'assets/js/admin.js'),
+			'styles' => array('assets/css/admin.css')
+		);
+
+		$this->load->view('admin_login', $data);
+	}
 
 	public function login() {}
 
