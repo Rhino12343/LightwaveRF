@@ -12,10 +12,31 @@
 				<?php }
 			}
 		?>
+
+		<?php
+			if (isset($scripts) && is_array($scripts)) {
+				foreach ($scripts as $source) { ?>
+					<script src="<?php echo $source; ?>"></script>
+				<?php }
+			}
+		?>
+
+		<script type="text/javascript">
+			$ = jQuery;
+		</script>
+
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
+
 	</head>
 	<body>
-		<div id="header"></div>
+		<div id="header">
+			<nav>
+				<a href='' id="view_users">View Users</a>
+				<a href='' id="import_users">Import Users</a>
+				<a href='' id="edit_user">Edit User</a>
+				<a href='' id="logout">Logout</a>
+			</nav>
+		</div>
 		<div id="content">

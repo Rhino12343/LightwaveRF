@@ -6,10 +6,32 @@ body {
 }
 
 #header {
-	background: orange;
+	background: #777;
+	background: -webkit-linear-gradient(black, white);
+	background: -o-linear-gradient(black, white);
+	background: -moz-linear-gradient(black, white);
+	background: linear-gradient(black, white);
 	width: 100%;
 	height: 50px;
 	margin-bottom: 10px;
+}
+
+#header nav {
+	width: 75%;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 25px;
+}
+
+#header nav a {
+	color: black;
+	text-decoration: none;
+	border-right: 1px solid black;
+	padding-right: 5px;
+}
+
+#header nav a:last-child {
+	border: 0;
 }
 
 #content {
@@ -23,9 +45,39 @@ body {
 	margin: 10px;
 }
 
+.row {
+	width: 100%;
+	display: block;
+	position: relative;
+}
+
 #footer {
-	background: blue;
+	background: #777;
+	background: -webkit-linear-gradient(white, black);
+	background: -o-linear-gradient(white, black);
+	background: -moz-linear-gradient(white, black);
+	background: linear-gradient(white, black);
 	width: 100%;
 	height: 50px;
 	margin-top: 10px;
+}
+
+.spinner {
+	position: fixed;
+	display: none;
+	z-index: 100;
+}
+
+#orbital {
+	background: red;
+	border-radius: 20px;
+	width: 20px;
+	height: 20px;
+}
+
+#orbital2 {
+	background: blue;
+	border-radius: 20px;
+	width: 20px;
+	height: 20px;
 }
