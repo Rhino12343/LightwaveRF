@@ -1,0 +1,171 @@
+body {
+	position: absolute;
+	width: 100%;
+	margin: 0px;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#header {
+	background: #777;
+	background: -webkit-linear-gradient(black, white);
+	background: -o-linear-gradient(black, white);
+	background: -moz-linear-gradient(black, white);
+	background: linear-gradient(black, white);
+	width: 100%;
+	height: 50px;
+	margin-bottom: 10px;
+}
+
+#header nav {
+	width: 75%;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 25px;
+}
+
+#header nav a {
+	color: black;
+	text-decoration: none;
+	border-right: 1px solid black;
+	padding-right: 5px;
+}
+
+#header nav a:last-child {
+	border: 0;
+}
+
+#content {
+	width: 75%;
+	margin: 0 auto;
+	position: relative;
+}
+
+#user_login input {
+	display: block;
+	margin: 10px;
+}
+
+.row {
+	width: 100%;
+	display: block;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.row .name {
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+}
+
+.row .email {
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+}
+
+.row .address {
+	display: inline-block;
+	width: 25%;
+}
+
+.row .address .suite {
+	display: block;
+}
+
+.row .address .street {
+	display: block;
+}
+
+.row .address .city {
+	display: block;
+}
+
+.row .address .zipcode {
+	display: block;
+}
+
+.row .view_more {
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+}
+
+.row .view_more .view_more_btn {
+	width: 100%;
+	border-radius: 5px;
+	background: blue;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+}
+
+.row .view_more .details {
+	display: none;
+}
+
+.row .heading {
+	font-weight: bold;
+	margin-left: -5px;
+}
+
+.row .phone_no {
+	width: 48%;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+.row .website {
+	width: 48%;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+.row .catch_phrase {
+	width: 48%;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+.row .strap_line {
+	width: 48%;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+#footer {
+	background: #777;
+	background: -webkit-linear-gradient(white, black);
+	background: -o-linear-gradient(white, black);
+	background: -moz-linear-gradient(white, black);
+	background: linear-gradient(white, black);
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+}
+
+.spinner {
+	position: fixed;
+	display: none;
+	z-index: 100;
+}
+
+#orbital {
+	background: red;
+	border-radius: 20px;
+	width: 20px;
+	height: 20px;
+}
+
+#orbital2 {
+	background: blue;
+	border-radius: 20px;
+	width: 20px;
+	height: 20px;
+}
