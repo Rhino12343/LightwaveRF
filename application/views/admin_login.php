@@ -14,10 +14,20 @@
 	</form>
 <?php } else { ?>
 	<script type="text/javascript">
-		$(document).ready(function() {
-			loader(true);
-			list_users();
-		});
+		function loadJQuery(){
+			var waitForLoad = function () {
+				if (typeof jQuery != "undefined") {
+					loader(true);
+					list_users();
+				} else {
+					window.setTimeout(waitForLoad, 500);
+				}
+			};
+
+			window.setTimeout(waitForLoad, 500);
+		}
+
+		window.onload = loadJQuery;
 	</script>
 <?php } ?>
 

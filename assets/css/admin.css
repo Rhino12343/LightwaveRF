@@ -49,6 +49,122 @@ body {
 	width: 100%;
 	display: block;
 	position: relative;
+	margin-bottom: 10px;
+}
+
+.row .name {
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+}
+
+.row .email {
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+}
+
+.row .address {
+	display: inline-block;
+	width: 25%;
+}
+
+.row .address .suite {
+	display: block;
+}
+
+.row .address .street {
+	display: block;
+}
+
+.row .address .city {
+	display: block;
+}
+
+.row .address .zipcode {
+	display: block;
+}
+
+.row .view_more {
+	display: inline-block;
+	width: 20%;
+	vertical-align: top;
+}
+
+.row .view_more .view_more_btn {
+	width: 100%;
+	border-radius: 5px;
+	background: blue;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+}
+
+.row .view_more .details {
+	display: none;
+}
+
+.row .heading {
+	font-weight: bold;
+	margin-left: -5px;
+}
+
+.row .phone_no {
+	width: 48%;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+.row .website {
+	width: 48%;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+.row .catch_phrase {
+	width: 48%;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+.row .strap_line {
+	width: 48%;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+}
+
+.row.user_update {
+	display: none;
+}
+
+.row.user_update #user_select {
+	margin-bottom: 10px;
+}
+
+.row.user_update input {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	position: absolute;
+	left: 130px;
+	width: 25%;
+}
+
+.row.user_update .save_btn {
+	left: 0px;
+	border-radius: 5px;
+	background: #59B4D4;
+	color: white;
+	width: 100px;
 }
 
 #footer {

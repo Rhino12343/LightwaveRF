@@ -13,18 +13,6 @@
 			}
 		?>
 
-		<?php
-			if (isset($scripts) && is_array($scripts)) {
-				foreach ($scripts as $source) { ?>
-					<script src="<?php echo $source; ?>"></script>
-				<?php }
-			}
-		?>
-
-		<script type="text/javascript">
-			$ = jQuery;
-		</script>
-
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
