@@ -1,5 +1,5 @@
 <?php
-class user extends CI_Model {
+class User extends CI_Model {
 	public function get_user_details($usn, $pwd) {
 		$this->db->select('user_id, usn, pwd, salt');
 		$this->db->from('users');
