@@ -74,11 +74,17 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'dsn' => '',
+	'hostname' => 'db2162.oneandone.co.uk',
+	'username' => 'dbo302862424',
+	'password' => 'Rhino12343',
+	'database' => 'db302862424',
+
+	/*'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => 'root',
-	'database' => 'users',
+	'database' => 'users',*/
+
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
